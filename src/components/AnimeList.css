@@ -48,6 +48,28 @@
 .anime-card a:hover {
   background-color: #2980b9;
 }
+
+.load-more-btn {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block; /* Center the button */
+  font-size: 1em;
+}
+
+.load-more-btn:hover {
+  background-color: #2980b9;
+}
+
+.load-more-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
 /* Existing styles ... */
 
 /* Responsive layout: 3 columns on medium screens */

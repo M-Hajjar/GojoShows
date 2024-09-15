@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import AnimeList from '../components/AnimeList';
 import Navbar from '../components/Navbar';
-import './Home.css'; // Optional: for additional page-level styling
+import Footer from '../components/Footer';
+import './Home.css';
 
 const Home = () => {
   const [category, setCategory] = useState('');
@@ -12,6 +13,7 @@ const Home = () => {
       <Navbar categories={categories} onCategoryChange={setCategory} />
       <h1>Anime List</h1>
       <AnimeList category={category} />
+      <Footer /> {/* Add Footer here */}
     </div>
   );
 };
