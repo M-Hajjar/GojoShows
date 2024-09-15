@@ -13,7 +13,7 @@ const Home = () => {
       <Navbar categories={categories} onCategoryChange={setCategory} />
       <h1>Anime List</h1>
       <AnimeList category={category} />
-      <Footer /> {/* Add Footer here */}
+      <Footer />
     </div>
   );
 };
