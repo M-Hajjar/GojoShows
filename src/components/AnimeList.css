@@ -1,0 +1,38 @@
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .anime-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .anime-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .anime-card h3 {
+    margin: 10px 0;
+  }
+  
+  .anime-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .anime-card a:hover {
+    background-color: #2980b9;
+  }
+  
