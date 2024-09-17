@@ -1,5 +1,29 @@
-.home-container {
-    width: 100%;
-    box-sizing: border-box; 
+
+  .home-container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .anime-list-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust to ensure 5 items per row */
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box; /* Include padding in width */
+  }
+  .load-more-button {
+    display: block; /* Make it a block element */
+    margin: 2rem auto; /* Center it horizontally */
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .load-more-button:hover {
+    background-color: #333;
   }
   

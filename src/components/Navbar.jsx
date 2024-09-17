@@ -1,21 +1,40 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import './Navbar.css';
 
-const Navbar = ({ categories, onCategoryChange }) => {
+const Navbar = ({ categories, onCategoryChange, showCategories = true }) => { // Added showCategories prop with default value true
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleCategorySelect = (category) => {
+    onCategoryChange(category);
+    setIsDropdownOpen(false); // Close the dropdown when a category is selected
+  };
+
   return (
     <nav className="navbar">
-      <h1>Anime Browser</h1>
-      <div className="nav-links">
-        <Link to="/">Home</Link>
+      <div className="navbar-logo">
+        <span className="gojo">Gojo</span><span className="shows">Shows</span>
       </div>
-      <div className="categories">
-        <select onChange={(e) => onCategoryChange(e.target.value)}>
-          <option value="">All</option>
-          {categories.map((category) => (
-            <option key={category} value={category}>{category}</option>
-          ))}
-        </select>
-      </div>
+      {showCategories && ( // Conditionally render the categories button
+        <div 
+          className="navbar-categories-button" 
+          onMouseEnter={() => setIsDropdownOpen(true)} 
+          onMouseLeave={() => setIsDropdownOpen(false)}
+        >
+          Categories
+          {isDropdownOpen && (
+            <ul className="navbar-categories-dropdown">
+              {categories.map((category, index) => (
+                <li 
+                  key={index} 
+                  onClick={() => handleCategorySelect(category)}
+                >
+                  {category}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
     </nav>
   );
 };
