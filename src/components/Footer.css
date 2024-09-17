@@ -1,10 +1,9 @@
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    position: center;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  width: 100%; /* Ensure the footer takes up the full width */
+  padding: 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}

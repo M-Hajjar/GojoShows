@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchAnimeDetails } from '../api/jikanApi';
+import Navbar from '../components/Navbar'; // Import Navbar
 import Footer from '../components/Footer';
 import './AnimeDetail.css';
 
@@ -21,7 +22,7 @@ const AnimeDetail = () => {
 
   return (
     <div className="anime-detail-page">
-      {/* Removed Navbar */}
+      <Navbar showCategories={false} /> {/* Include Navbar without categories */}
       <div className="anime-detail-container">
         <img src={anime.images.jpg.large_image_url} alt={anime.title} className="anime-detail-image" />
         <div className="anime-detail-info">
