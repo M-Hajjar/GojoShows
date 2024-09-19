@@ -1,8 +1,18 @@
-# React + Vite
+# GojoShows
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**GojoShows** is a web application that allows users to browse anime shows, view detailed information about each show, and save their favorite shows for later. The app uses data from the [Jikan API](https://jikan.moe/) and is built with React.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Browse Anime Shows**: View a list of anime with details like title, year, episodes, and genres.
+- **Anime Details**: Click on an anime card to see more detailed information like the synopsis, release date, and genre list.
+- **Favorites**: Save anime shows to your favorites list by clicking the heart icon and easily access them later from the "Favorites" page.
+- **Responsive Design**: The app is designed to be responsive and works well on various devices and screen sizes.
+
+## Technologies Used
+
+- **Frontend**: React, Context API, React Router
+- **Styling**: CSS, responsive design
+- **API**: Jikan API (Anime data)
+
+
