@@ -1,0 +1,57 @@
+.favorites-page {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .favorites-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: skyblue;
+  }
+  
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .favorite-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .favorite-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .favorite-card .anime-info {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .favorite-card h2 {
+    font-size: 1.5rem;
+    color: skyblue;
+  }
+  
+  .favorite-card p {
+    margin: 0.5rem 0;
+    color: #ddd;
+  }
+  
+  .no-favorites-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-top: 2rem;
+  }
+  

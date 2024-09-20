@@ -1,10 +1,10 @@
 .anime-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding: 20px;
-  width: 100%; /* Take up full width */
-  box-sizing: border-box; /* Include padding in width */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .anime-card {
@@ -13,6 +13,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
+  position: relative; /* Needed for positioning heart icon */
 }
 
 .anime-card img {
@@ -22,6 +23,25 @@
 
 .anime-details {
   padding: 10px;
+}
+
+.anime-card-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Keep it in the top right corner */
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly white background */
+  border-radius: 50%; /* Make it a perfect circle */
+  padding: 10px; /* Increase padding for larger circular area */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+.anime-card-heart img {
+  width: 28px; /* Slightly bigger icon */
+  height: 28px;
 }
 
 .anime-card h3 {
@@ -73,24 +93,19 @@
   cursor: not-allowed;
 }
 
-
-/* Existing styles ... */
-
-/* Responsive layout: 3 columns on medium screens */
+/* Responsive layouts */
 @media (max-width: 1200px) {
   .anime-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Responsive layout: 2 columns on small screens */
 @media (max-width: 800px) {
   .anime-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Responsive layout: 1 column on extra small screens */
 @media (max-width: 500px) {
   .anime-list {
     grid-template-columns: 1fr;
