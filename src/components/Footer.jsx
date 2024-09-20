@@ -2,7 +2,7 @@ import './Footer.css';
 
 const Footer = () => (
   <footer className="footer">
-    <p>&copy; {new Date().getFullYear()} Anime Browser. All rights reserved.</p>
+    <p>&copy; {new Date().getFullYear()} GojoShows. All rights reserved.</p>
   </footer>
 );
 
