@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { fetchAnimes } from '../api/jikanApi';
+import { fetchAnimes } from '../api/JikanApi';
 import AnimeCard from './AnimeCard';
 import './AnimeList.css';
 
