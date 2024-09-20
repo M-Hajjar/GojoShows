@@ -48,6 +48,20 @@
 .anime-card a:hover {
   background-color: #2980b9;
 }
+.anime-card-heart,
+.anime-detail-heart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.anime-card-heart img,
+.anime-detail-heart img {
+  width: 24px;
+  height: 24px;
+}
+
 
 .load-more-container {
   text-align: center;

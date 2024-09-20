@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import './Navbar.css';
 
 const Navbar = ({ categories, onCategoryChange, showCategories = true }) => {
@@ -14,7 +15,7 @@ const Navbar = ({ categories, onCategoryChange, showCategories = true }) => {
       <div className="navbar-logo">
         <span className="gojo">Gojo</span><span className="shows">Shows</span>
       </div>
-      
+
       <div className="navbar-buttons">
         {showCategories && ( // Conditionally render the categories button
           <div 
@@ -37,10 +38,11 @@ const Navbar = ({ categories, onCategoryChange, showCategories = true }) => {
             )}
           </div>
         )}
+
         {/* Add Favourite Shows button */}
-        <div className="navbar-favourites-button">
+        <Link to="/favorites" className="navbar-favourites-button">
           Favourite Shows
-        </div>
+        </Link>
       </div>
     </nav>
   );
