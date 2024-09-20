@@ -28,13 +28,20 @@
 .anime-card-heart {
   position: absolute;
   top: 10px;
-  right: 10px; /* Heart icon on top right corner */
+  right: 10px; /* Keep it in the top right corner */
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly white background */
+  border-radius: 50%; /* Make it a perfect circle */
+  padding: 10px; /* Increase padding for larger circular area */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
 }
 
 .anime-card-heart img {
-  width: 24px;
-  height: 24px;
+  width: 28px; /* Slightly bigger icon */
+  height: 28px;
 }
 
 .anime-card h3 {
