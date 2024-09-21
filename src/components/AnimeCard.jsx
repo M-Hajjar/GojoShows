@@ -16,7 +16,7 @@ const AnimeCard = ({ anime }) => {
           <img src={isFavorited ? heartSolid : heartRegular} alt="Favorite Icon" />
         </div>
 
-        <p><strong>{anime.title}</strong></p>
+        <h3 className="anime-title">{anime.title}</h3>
         <p><strong>Year:</strong> {anime.aired?.prop?.from?.year || 'N/A'}</p>
         <p><strong>Episodes:</strong> {anime.episodes || 'N/A'}</p>
         <p><strong>Categories:</strong> {anime.genres.map(genre => genre.name).join(', ')}</p>

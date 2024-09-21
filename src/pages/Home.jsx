@@ -12,7 +12,7 @@ const Home = () => {
     <div className="home-container">
       <Navbar categories={categories} onCategoryChange={setCategory} />
       <h1 className="anime-title">
-        <span className="highlight">Anime</span> List
+        <span className="highlight">Anime List</span> 
       </h1>
       <AnimeList category={category} />
       <Footer />
