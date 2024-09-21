@@ -35,7 +35,8 @@
   align-items: center;
 }
 
-.navbar-categories-button, .navbar-favourites-button {
+.navbar-categories-button, 
+.navbar-favourites-button {
   position: relative;
   color: skyblue;
   background-color: black;
@@ -75,4 +76,63 @@
 
 .navbar-categories-dropdown li:hover {
   background-color: #555;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.8rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-buttons {
+    display: none; /* Initially hide the buttons */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-buttons.show {
+    display: flex; /* Show the buttons when the hamburger menu is clicked */
+  }
+
+  .navbar-categories-button,
+  .navbar-favourites-button {
+    width: 100%; /* Make buttons full width on mobile */
+    margin: 0.5rem 0;
+    padding: 1rem;
+  }
+
+  .navbar-categories-dropdown {
+    width: 100%; /* Ensure dropdown is full width */
+  }
+
+  /* Hamburger menu */
+  .navbar-hamburger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: skyblue;
+    margin-right: 1.5rem;
+  }
+
+  .navbar-hamburger:focus {
+    outline: none;
+  }
+
+  .navbar-hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: white;
+  }
 }
