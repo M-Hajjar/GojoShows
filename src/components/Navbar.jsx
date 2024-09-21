@@ -4,6 +4,7 @@ import './Navbar.css';
 
 const Navbar = ({ categories, onCategoryChange, showCategories = true }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // State to toggle the mobile menu
 
   const handleCategorySelect = (category) => {
     onCategoryChange(category);
@@ -19,7 +20,14 @@ const Navbar = ({ categories, onCategoryChange, showCategories = true }) => {
         </Link>
       </div>
 
-      <div className="navbar-buttons">
+      {/* Hamburger menu for mobile */}
+      <button className="navbar-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div className={`navbar-buttons ${menuOpen ? 'show' : ''}`}>
         {showCategories && ( // Conditionally render the categories button
           <div 
             className="navbar-categories-button" 
