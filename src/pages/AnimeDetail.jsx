@@ -37,12 +37,7 @@ const AnimeDetail = () => {
           <p><strong>Episodes:</strong> {anime.episodes}</p>
           <p><strong>Genre:</strong> {anime.genres.map(genre => genre.name).join(', ')}</p>
           <p><strong>Synopsis:</strong> {anime.synopsis}</p>
-          <img 
-            src={isFavorited ? heartSolid : heartRegular} 
-            alt="Favorite"
-            onClick={() => toggleFavorite(anime.mal_id)} 
-            className="favorite-icon"
-          />
+
         </div>
       </div>
       <Footer />
