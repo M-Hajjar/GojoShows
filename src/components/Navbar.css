@@ -44,8 +44,14 @@
   margin-right: 2.5rem; /* Move buttons slightly to the left */
 }
 
-.navbar-categories-button:hover, .navbar-favourites-button:hover {
+.navbar-categories-button:hover, 
+.navbar-favourites-button:hover {
   background-color: #333;
+}
+
+.navbar-categories-button:hover, 
+.navbar-favourites-button:hover {
+  color: skyblue; /* Ensures text stays sky blue on hover */
 }
 
 .navbar-categories-dropdown {
