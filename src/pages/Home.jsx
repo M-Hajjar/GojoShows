@@ -11,7 +11,9 @@ const Home = () => {
   return (
     <div className="home-container">
       <Navbar categories={categories} onCategoryChange={setCategory} />
-      <h1>Anime List</h1>
+      <h1 className="anime-title">
+        <span className="highlight">Anime</span> List
+      </h1>
       <AnimeList category={category} />
       <Footer />
     </div>

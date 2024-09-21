@@ -13,7 +13,10 @@ const Navbar = ({ categories, onCategoryChange, showCategories = true }) => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <span className="gojo">Gojo</span><span className="shows">Shows</span>
+        {/* Wrap the logo in a Link component to navigate to the homepage */}
+        <Link to="/">
+          <span className="gojo">Gojo</span><span className="shows">Shows</span>
+        </Link>
       </div>
 
       <div className="navbar-buttons">
