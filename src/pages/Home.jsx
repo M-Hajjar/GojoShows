@@ -6,7 +6,7 @@ import './Home.css';
 
 const Home = () => {
   const [category, setCategory] = useState('');
-  const categories = ['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror']; // Example categories
+  const categories = ['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy', 'Horror']; 
 
   return (
     <div className="home-container">

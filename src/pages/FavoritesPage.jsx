@@ -29,7 +29,9 @@ const FavoritesPage = () => {
   return (
     <div>
       <Navbar showCategories={false} />  {/* Navbar without categories dropdown */}
-      <h1>Your Favorite Shows</h1>
+      <h1 className="anime-title">
+        <span className="highlight">Your Favorite Shows</span> 
+      </h1>
       <div className="favorites-grid">  {/* Grid to display anime cards */}
         {favoriteAnimes.map(anime => (
           <AnimeCard key={anime.mal_id} anime={anime} />  
