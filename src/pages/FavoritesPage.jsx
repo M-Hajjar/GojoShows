@@ -7,14 +7,14 @@ import AnimeCard from '../components/AnimeCard';
 import './FavoritesPage.css';
 
 const FavoritesPage = () => {
-  const { favorites } = useFavorites();  // Fetch favorite IDs from context
+  const { favorites } = useFavorites();  
   const [favoriteAnimes, setFavoriteAnimes] = useState([]);
 
-  // Fetch details of all favorite anime based on their IDs
+ 
   useEffect(() => {
     const fetchFavorites = async () => {
       const data = await Promise.all(favorites.map((id) => fetchAnimeDetails(id)));
-      console.log(data);  // Log the fetched data to check the structure
+      console.log(data);  
       setFavoriteAnimes(data);
     };
   
@@ -23,12 +23,11 @@ const FavoritesPage = () => {
     }
   }, [favorites]);
 
-  // If no favorites exist, display a message
   if (!favorites.length) return <p>No favorite shows yet.</p>;
 
   return (
     <div>
-      <Navbar showCategories={false} />  {/* Navbar without categories dropdown */}
+      <Navbar showCategories={false} /> 
       <h1 className="anime-title">
         <span className="highlight">Your Favorite Shows</span> 
       </h1>
