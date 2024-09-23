@@ -8,10 +8,9 @@ const AnimeList = ({ category }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
   
-  const limitPerPage = 20; // Number of shows to display per page
+  const limitPerPage = 20; 
 
   useEffect(() => {
-    // Reset page and anime list when category changes
     setAnimes([]);
     setCurrentPage(1);
     loadAnimes(1);
