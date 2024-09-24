@@ -1,4 +1,4 @@
-# GojoShows
+# [GojoShows](https://gojoshows.netlify.app/)
 
 **GojoShows** is a web application that allows users to browse anime shows, view detailed information about each show, and save their favorite shows for later. The app uses data from the [Jikan API](https://jikan.moe/) and is built with React.
 
